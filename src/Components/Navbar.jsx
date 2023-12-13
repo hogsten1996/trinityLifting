@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link to="/programs" className="text-white font-bold px-4 py-2 hover:text-red-700">
             Programs
           </Link>
-          <Link to="/articles" className="text-white font-bold px-4 py-2 hover:text-red-700">
+          <Link to="/allarticles" className="text-white font-bold px-4 py-2 hover:text-red-700">
             Articles
           </Link>
           <Link to="/maxliftcalc" className="block text-white font-bold px-4 py-2 hover:text-red-700">

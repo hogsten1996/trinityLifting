@@ -6,9 +6,9 @@ import HomeSupportUs from "../Components/HomeSupportUs";
 const Home = () => {
   return (
     <div>
-      <div><HomeHeader /></div>
-      <div><HomeSupportUs /></div>
-      <div><HomeArticles /></div>
+      <HomeHeader />
+      <HomeSupportUs />
+      <HomeArticles />
     </div>
   );
 };

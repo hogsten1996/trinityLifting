@@ -7,6 +7,7 @@ const articles = [
     content: "In React, components can manage their internal state...",
     imageUrl:
       "https://www.beforetheflood.com/wp-content/uploads/2023/08/Common-Monkey-Pets-List.jpg",
+    tags: ["tag1", "tag 2"],
   },
   {
     id: 3,
@@ -16,6 +17,7 @@ const articles = [
     content: "React is a JavaScript library for building user interfaces...",
     imageUrl:
       "https://www.beforetheflood.com/wp-content/uploads/2023/08/Common-Monkey-Pets-List.jpg",
+      tags: ["tag3", "tag 4"],
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const articles = [
     content: "In React, components can manage their internal state...",
     imageUrl:
       "https://www.beforetheflood.com/wp-content/uploads/2023/08/Common-Monkey-Pets-List.jpg",
+      tags: ["tag7", "tag 2"],
   },
   {
     id: 1,
@@ -34,6 +37,7 @@ const articles = [
     content: "In React, components can manage their internal state...",
     imageUrl:
       "https://www.beforetheflood.com/wp-content/uploads/2023/08/Common-Monkey-Pets-List.jpg",
+      tags: ["tag9", "tag 2"],
   },
 ];
 

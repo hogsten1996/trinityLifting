@@ -1,4 +1,3 @@
-// components/HomeArticles.js
 import React from "react";
 import { Link } from "react-router-dom";
 import articles from "../articles/articles";
@@ -7,7 +6,7 @@ const HomeArticles = () => {
   const featuredArticles = articles.slice(0, 4);
 
   return (
-    <div className="max-w-[95%] mx-auto lg:max-w-[80%] mt-6">
+    <div className="max-w-[95%] mx-auto lg:max-w-[80%] my-6">
       <h2 className="text-3xl font-extrabold mb-2">Featured Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
         {featuredArticles.map((article) => (
