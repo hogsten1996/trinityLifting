@@ -1,5 +1,5 @@
 import React from "react";
-import generateThreeDayProgram from "./threeDayProgramLogic.js";
+import generateThreeDayProgram from "../utils/threeDayProgramLogic.js";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 

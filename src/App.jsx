@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Programs from "./pages/Programs"; 
 import ThreeDayProgramForm from './Components/ThreeDayProgramForm';
 import MaxLiftCalculator from './Components/MaxLiftCalculator';
+import AllArticles from './pages/AllArticles';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/threedayprogramform" element={<ThreeDayProgramForm />} />
         <Route path="/maxliftcalc" element={<MaxLiftCalculator />} />
+        <Route path="/articles" element={<AllArticles />} />
       </Routes>
     </div>
   );
