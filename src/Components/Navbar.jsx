@@ -22,22 +22,22 @@ const Navbar = () => {
 
         {/* Normal Links */}
         <div className="hidden lg:flex lg:items-center">
-          <Link to="/" className="text-white px-4 py-2 hover:font-bold">
+          <Link to="/" className="text-white font-bold px-4 py-2 hover:text-red-700">
             Home
           </Link>
-          <Link to="/programs" className="text-white px-4 py-2 hover:font-bold">
+          <Link to="/programs" className="text-white font-bold px-4 py-2 hover:text-red-700">
             Programs
           </Link>
-          <Link to="/articles" className="text-white px-4 py-2 hover:font-bold">
+          <Link to="/articles" className="text-white font-bold px-4 py-2 hover:text-red-700">
             Articles
           </Link>
-          <Link to="/maxliftcalc" className="block text-white px-4 py-2 hover:font-bold">
+          <Link to="/maxliftcalc" className="block text-white font-bold px-4 py-2 hover:text-red-700">
             Max-Calc
           </Link>
-          <Link to="/about" className="text-white px-4 py-2 hover:font-bold">
+          <Link to="/about" className="text-white font-bold px-4 py-2 hover:text-red-700">
             About
           </Link>
-          <Link to="/maxliftcalc" className="block text-white px-4 py-2 hover:font-bold">
+          <Link to="/maxliftcalc" className="block text-white font-bold px-4 py-2 hover:text-red-700">
             Contact
           </Link>
         </div>
