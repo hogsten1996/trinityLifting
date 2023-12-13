@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Programs = () => {
   return (
     <div className="max-w-[95%] mt-4 mx-auto text-gray-900 lg:max-w-[80%]">
-      <h1 className="text-3xl font-bold text-center">Training Programs</h1>
+      <h1 className="text-3xl font-bold text-center">Free Training Programs</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-6">
         <div className="flex flex-col justify-center items-center mb-8">
           <h1 className="text-xl font-bold">Intro Strength</h1>

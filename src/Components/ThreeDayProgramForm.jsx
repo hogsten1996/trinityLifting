@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ThreeDayProgram from "./ThreeDayProgram";
+import { Link } from "react-router-dom";
 
 const ThreeDayProgramForm = () => {
   const [squatMax, setSquatMax] = useState("");
@@ -21,6 +22,14 @@ const ThreeDayProgramForm = () => {
       <h2 className="text-3xl font-bold my-3 text-center">
         Three Day Program Generator
       </h2>
+      <p className="text-center my-3">
+        Don't Know your max lifts?{" "}
+        <Link to="/maxliftcalc">
+          <b className="underline hover:text-blue-600 cursor-pointer">
+            CLICK HERE
+          </b>
+        </Link>
+      </p>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-[30%] mx-auto">
         <div className="flex flex-col">
           <label className="text-lg font-bold mb-1">Squat Max (lbs):</label>
@@ -50,7 +59,9 @@ const ThreeDayProgramForm = () => {
           />
         </div>
         <div className="flex flex-col">
-          <label className="text-lg font-bold mb-1">Overhead Press Max (lbs):</label>
+          <label className="text-lg font-bold mb-1">
+            Overhead Press Max (lbs):
+          </label>
           <input
             type="number"
             value={overheadPressMax}

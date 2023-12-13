@@ -7,41 +7,47 @@ const MaxLiftCalculator = () => {
 
   const calculateMaxLift = () => {
     const maxLiftValue = weight / (1.0278 - 0.0278 * reps);
-    setMaxLift(maxLiftValue.toFixed(2)); // Round to two decimal places
+    const roundedMaxLift = Math.round(maxLiftValue / 5) * 5; // Round to nearest 5
+    setMaxLift(roundedMaxLift);
   };
 
   return (
-    <div>
-      <h2>Max Lift Calculator</h2>
+    <div className="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
+      <h2 className="text-2xl font-bold mb-4">Max Lift Calculator</h2>
       <form>
-        <label>
+        <label className="block mb-2 text-sm font-semibold text-gray-600">
           Weight (lbs):
           <input
             type="number"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
           />
         </label>
-        <br />
-        <label>
+        <label className="block mb-2 text-sm font-semibold text-gray-600">
           Reps:
           <input
             type="number"
             value={reps}
             onChange={(e) => setReps(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
           />
         </label>
-        <br />
-        <button type="button" onClick={calculateMaxLift}>
+        <button
+          type="button"
+          onClick={calculateMaxLift}
+          className="w-full py-2 mt-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
           Calculate Max Lift
         </button>
       </form>
-      <h3>Note: Above 8 Reps accuracy decreases</h3>
+      <h3 className="mt-4 text-sm text-gray-500">Note: Above 8 Reps accuracy decreases</h3>
       {maxLift !== null && (
-        <p>Your estimated max lift is: {maxLift} lbs</p>
+        <p className="mt-4 text-lg text-green-600">Your estimated max lift is: {maxLift} lbs</p>
       )}
     </div>
   );
 };
 
 export default MaxLiftCalculator;
+
