@@ -17,17 +17,17 @@ const HomeHeader = () => {
         <img
           src="https://www.trainheroic.com/wp-content/uploads/2022/02/Bench-press.jpg"
           alt=""
-          className="hidden md:block object-cover w-full h-[300px]"
+          className="hidden lg:block object-cover w-full h-[300px]"
         />
         <img
           src="https://www.healthdigest.com/img/gallery/how-powerlifting-is-different-from-bodybuilding/l-intro-1656797854.jpg"
           alt=""
-          className="hidden md:block object-cover w-full h-[300px]"
+          className="hidden lg:block object-cover w-full h-[300px]"
         />
       </div>
       <div></div>
       <div>
-        <h1 className="text-[40px] lg:text-[80px] font-extrabold text-center my-5">
+        <h1 className="text-[40px] lg:text-[90px] font-extrabold text-center my-5">
           STRENGTH IS <b className="text-red-700">EARNED</b>
         </h1>
       </div>
