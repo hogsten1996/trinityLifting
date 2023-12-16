@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import articles from '../articles/articles';
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const AllArticles = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const filteredArticles = articles.filter(
@@ -14,7 +18,7 @@ const AllArticles = () => {
     <div className="max-w-[95%] mx-auto lg:max-w-[80%] mt-6 min-h-screen">
       <h2 className="text-3xl text-center font-extrabold mb-10">All Articles</h2>
 
-      <div className="mb-14 w-[50%] mx-auto">
+      <div className="mb-14 lg:w-[50%] mx-auto">
         <h1 className='text-center text-2xl font-bold mb-3'>Search:</h1>
         <input
           type="text"
@@ -25,10 +29,10 @@ const AllArticles = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-6">
         {filteredArticles.map((article) => (
           <div key={article.id} className="hover:opacity-80">
-            <Link to={`/article/${article.id}`} className="block">
+            <Link to={`/article/${article.id}`} className="block mb-6" onClick={scrollToTop}>
               <h3 className="text-xl font-bold">{article.title}</h3>
               <p className="text-sm font-extrabold text-red-700 mb-1">Author: {article.author}</p>
               <img

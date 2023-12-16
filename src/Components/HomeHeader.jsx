@@ -25,7 +25,6 @@ const HomeHeader = () => {
           className="hidden lg:block object-cover w-full h-[300px]"
         />
       </div>
-      <div></div>
       <div>
         <h1 className="text-[40px] lg:text-[90px] font-extrabold text-center my-5">
           STRENGTH IS <b className="text-red-700">EARNED</b>

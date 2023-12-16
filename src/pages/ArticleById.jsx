@@ -15,13 +15,13 @@ const ArticleById = () => {
   }
 
   return (
-    <div className="w-[95%] lg:w-[60%] mx-auto mt-8 bg-white p-6 rounded-md shadow-md">
+    <div className="w-[95%] lg:w-[60%] mx-auto mt-8 bg-white rounded-md shadow-md">
       <h2 className="text-3xl font-bold mb-4">{article.title}</h2>
       <p className="text-sm text-gray-500 mb-2">Author: {article.author}</p>
       <img
         src={article.imageUrl}
         alt={article.title}
-        className="w-full h-[600px] object-cover mb-4"
+        className="w-full h-[300px] lg:h-[600px] object-cover mb-4"
       />
 
       {article.sections.map((section, index) => (
