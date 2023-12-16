@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import articles from "../articles/articles";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const HomeArticles = () => {
   const featuredArticles = articles.slice(0, 4);
 
@@ -11,7 +15,7 @@ const HomeArticles = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
         {featuredArticles.map((article) => (
           <div key={article.id} className="hover:opacity-80">
-            <Link to={`/article/${article.id}`}>
+            <Link to={`/article/${article.id}`} onClick={scrollToTop}>
               <h3 className="text-xl font-bold">{article.title}</h3>
               <p className="text-sm font-extrabold text-red-700 mb-1">Author: {article.author}</p>
               <img

@@ -98,9 +98,14 @@ const ThreeDayProgram = ({
     <div className="flex justify-center max-w-[95%] mx-auto xl:w-[80%]">
       {trainingProgram.length > 0 && (
         <div>
-          <button onClick={handleDownloadPDF}>Download as PDF</button>
+          <button
+            onClick={handleDownloadPDF}
+            className="my-5 bg-black text-red-700 py-1 px-2 rounded-xl font-bold hover:text-white hover:bg-red-700"
+          >
+            Download as PDF
+          </button>
           <h3 className="text-3xl font-extrabold text-center my-6">
-            3 Day Split ( 6Weeks )
+            Intro Strength
           </h3>
           <div className="flex flex-wrap">
             {trainingProgram.map((week, index) => (
