@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const HomeHeader = () => {
   return (
     <div>
@@ -23,12 +27,12 @@ const HomeHeader = () => {
       </div>
       <div></div>
       <div>
-        <h1 className="text-[40px] lg:text-[70px] font-extrabold text-center my-5">
+        <h1 className="text-[40px] lg:text-[80px] font-extrabold text-center my-5">
           STRENGTH IS <b className="text-red-700">EARNED</b>
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 max-w-[95%] mx-auto gap-5 md:max-w-[80%]">
-        <Link to="/allarticles">
+        <Link to="/allarticles" onClick={scrollToTop}>
           <div className="hover:opacity-80 cursor-pointer">
             <h1 className="text-2xl font-extrabold text-red-700 bg-black p-2">
               Articles
@@ -40,7 +44,7 @@ const HomeHeader = () => {
             />
           </div>
         </Link>
-        <Link to="/programs">
+        <Link to="/programs" onClick={scrollToTop}>
           {" "}
           <div className="hover:opacity-80 cursor-pointer">
             <h1 className="text-2xl font-extrabold text-red-700 bg-black p-2">

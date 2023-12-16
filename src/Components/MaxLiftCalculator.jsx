@@ -12,7 +12,7 @@ const MaxLiftCalculator = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
+    <div className="max-w-md mx-auto p-6 bg-white rounded-md shadow-md min-h-screen">
       <h2 className="text-2xl font-bold mb-4">Max Lift Calculator</h2>
       <form>
         <label className="block mb-2 text-sm font-semibold text-gray-600">

@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeSupportUs = () => {
   return (
-    <div className="flex flex-col items-center md:flex-row justify-between max-w-[95%] mx-auto lg:max-w-[80%] my-5">
+    <div className="flex flex-col items-center md:flex-row justify-between max-w-[95%] mx-auto lg:max-w-[80%] mt-16">
       <div className="md:w-1/3 my-5 text-center md:text-left">
         <h1 className="text-2xl font-extrabold">
           Support Us By Purchasing Our Apparel
@@ -13,6 +13,13 @@ const HomeSupportUs = () => {
           some of our merch or purchasing some online coaching to help support
           Trinity Lifting.
         </p>
+        <a
+          href="https://www.amazon.com/s?rh=n%3A7141123011%2Cp_4%3ATrinity+Lifting&ref=bl_sl_s_ap_web_7141123011"
+          target="_blank"
+          className="block w-[40%] mx-auto md:mx-0 bg-black text-white text-xl px-3 py-2 rounded-2xl font-bold hover:bg-red-700 mt-4 text-center text-decoration-none"
+        >
+          Our Store
+        </a>
       </div>
       <div className="md:w-1/3 my-5 text-center">
         <a
@@ -45,4 +52,3 @@ const HomeSupportUs = () => {
 };
 
 export default HomeSupportUs;
-

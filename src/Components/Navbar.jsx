@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="bg-black p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
@@ -57,21 +61,24 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden">
           <div className="container mx-auto bg-black">
-            <Link to="/" className="block text-white px-4 py-2">
+            <Link to="/" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Home
             </Link>
-            <Link to="/about" className="block text-white px-4 py-2">
+            <Link to="/about" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               About
             </Link>
-            <Link to="/programs" className="block text-white px-4 py-2">
+            <Link to="/programs" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Programs
             </Link>
-            <Link to="/maxliftcalc" className="block text-white px-4 py-2">
+            <Link to="/maxliftcalc" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Max-Calc
             </Link>
-            <Link to="/maxliftcalc" className="block text-white px-4 py-2">
+            <Link to="/maxliftcalc" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Contact
             </Link>
+            <a to="/maxliftcalc" className="block text-red-700 font-extrabold px-4 py-2 hover:cursor-pointer" onClick={closeMobileMenu}>
+              Back
+            </a>
           </div>
         </div>
       )}
@@ -81,3 +88,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -18,7 +18,7 @@ const ThreeDayProgramForm = () => {
   };
 
   return (
-    <div className="max-w-[95%] lg:max-w-[80%] mx-auto">
+    <div className="w-[95%] lg:w-[80%] mx-auto mb-12 min-h-screen">
       <h2 className="text-3xl font-bold my-3 text-center">
         Three Day Program Generator
       </h2>
@@ -30,7 +30,7 @@ const ThreeDayProgramForm = () => {
           </b>
         </Link>
       </p>
-      <form onSubmit={handleSubmit} className="space-y-4 max-w-[30%] mx-auto">
+      <form onSubmit={handleSubmit} className="space-y-4 md:w-[30%] mx-auto">
         <div className="flex flex-col">
           <label className="text-lg font-bold mb-1">Squat Max (lbs):</label>
           <input

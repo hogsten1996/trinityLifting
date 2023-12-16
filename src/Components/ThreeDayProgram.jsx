@@ -46,15 +46,33 @@ const ThreeDayProgram = ({
 
       const tableData = week.days.flatMap((day) => {
         const rowData = [
-          [`Day ${day.day}`, day.excercise, day.sets, day.reps, roundToNearest5(day.weight)],
+          [
+            `Day ${day.day}`,
+            day.excercise,
+            day.sets,
+            day.reps,
+            roundToNearest5(day.weight),
+          ],
         ];
 
         if (day.excercise2) {
-          rowData.push(["", day.excercise2, day.sets2, day.reps2, roundToNearest5(day.weight2)]);
+          rowData.push([
+            "",
+            day.excercise2,
+            day.sets2,
+            day.reps2,
+            roundToNearest5(day.weight2),
+          ]);
         }
 
         if (day.excercise3) {
-          rowData.push(["", day.excercise3, day.sets3, day.reps3, roundToNearest5(day.weight3)]);
+          rowData.push([
+            "",
+            day.excercise3,
+            day.sets3,
+            day.reps3,
+            roundToNearest5(day.weight3),
+          ]);
         }
 
         if (day.excercise4) {
@@ -77,7 +95,7 @@ const ThreeDayProgram = ({
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center max-w-[95%] mx-auto xl:w-[80%]">
       {trainingProgram.length > 0 && (
         <div>
           <button onClick={handleDownloadPDF}>Download as PDF</button>
@@ -86,53 +104,94 @@ const ThreeDayProgram = ({
           </h3>
           <div className="flex flex-wrap">
             {trainingProgram.map((week, index) => (
-              <div key={`week${week.week}`} className="w-full sm:1/2 lg:w-1/3 mb-8">
+              <div
+                key={`week${week.week}`}
+                className="w-full md:1/2 lg:w-1/2 mb-8"
+              >
                 <h4 className="text-2xl font-bold mb-3">Week {week.week}</h4>
-                <table className="table-auto">
+                <table className="table-auto mx-auto">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 text-xl">Day</th>
-                      <th className="px-4 py-2 text-xl">Exercise</th>
-                      <th className="px-4 py-2 text-xl">Sets</th>
-                      <th className="px-4 py-2 text-xl">Reps</th>
-                      <th className="px-4 py-2 text-xl">Weight</th>
+                      <th className="sm:px-1 lg:px-2 py-2 md:text-xl">Day</th>
+                      <th className="sm:px-1 lg:px-2 py-2 md:text-xl">
+                        Exercise
+                      </th>
+                      <th className="sm:px-1 lg:px-2 py-2 md:text-xl">Sets</th>
+                      <th className="sm:px-1 lg:px-2 py-2 md:text-xl">Reps</th>
+                      <th className="sm:px-1 lg:px-2 py-2 md:text-xl">
+                        Weight
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     {week.days.map((day) => (
                       <React.Fragment key={`day${day.day}`}>
                         <tr>
-                          <td className="border px-4 py-2 font-bold border-solid border-gray-400">Day {day.day}</td>
-                          <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.excercise}</td>
-                          <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.sets}</td>
-                          <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.reps}</td>
-                          <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{roundToNearest5(day.weight)}</td>
+                          <td className="border sm:px-1 lg:px-2 py-2 font-bold border-solid border-gray-400">
+                            Day {day.day}
+                          </td>
+                          <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                            {day.excercise}
+                          </td>
+                          <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                            {day.sets}
+                          </td>
+                          <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                            {day.reps}
+                          </td>
+                          <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                            {roundToNearest5(day.weight)}
+                          </td>
                         </tr>
                         {day.excercise2 && (
                           <tr>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400"></td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.excercise2}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.sets2}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.reps2}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{roundToNearest5(day.weight2)}</td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400"></td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.excercise2}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.sets2}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.reps2}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {roundToNearest5(day.weight2)}
+                            </td>
                           </tr>
                         )}
                         {day.excercise3 && (
                           <tr>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400"></td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.excercise3}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.sets3}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.reps3}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{roundToNearest5(day.weight3)}</td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400"></td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.excercise3}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.sets3}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.reps3}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {roundToNearest5(day.weight3)}
+                            </td>
                           </tr>
                         )}
                         {day.excercise4 && (
                           <tr>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400"></td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.excercise4}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.sets4}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">{day.reps4}</td>
-                            <td className="border px-4 py-2 font-semibold border-solid border-gray-400">N/A</td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400"></td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.excercise4}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.sets4}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              {day.reps4}
+                            </td>
+                            <td className="border sm:px-1 lg:px-2 py-2 font-semibold border-solid border-gray-400">
+                              N/A
+                            </td>
                           </tr>
                         )}
                       </React.Fragment>
@@ -149,6 +208,3 @@ const ThreeDayProgram = ({
 };
 
 export default ThreeDayProgram;
-
-
-
