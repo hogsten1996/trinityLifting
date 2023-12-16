@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
-          <Link to="/" className="text-white text-2xl font-semibold">
+          <Link to="/" className="text-white text-2xl font-semibold hover:text-red-700">
             <b className="text-3xl">T</b>rinity<b className="text-3xl">L</b>
             ifting
           </Link>

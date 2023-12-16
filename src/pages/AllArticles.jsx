@@ -16,7 +16,7 @@ const AllArticles = () => {
 
   return (
     <div className="max-w-[95%] mx-auto lg:max-w-[80%] mt-6 min-h-screen">
-      <h2 className="text-3xl text-center font-extrabold mb-10">All Articles</h2>
+      <h2 className="text-3xl text-center font-extrabold mb-10">All <b className='text-red-700'>Articles</b></h2>
 
       <div className="mb-14 lg:w-[50%] mx-auto">
         <h1 className='text-center text-2xl font-bold mb-3'>Search:</h1>
