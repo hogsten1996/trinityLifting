@@ -60,18 +60,21 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden">
-          <div className="container mx-auto bg-black">
+          <div className="container mx-auto bg-black flex flex-col items-center">
             <Link to="/" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Home
-            </Link>
-            <Link to="/about" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
-              About
             </Link>
             <Link to="/programs" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Programs
             </Link>
+            <Link to="/allarticles" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
+            Articles
+          </Link>
             <Link to="/maxliftcalc" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Max-Calc
+            </Link>
+            <Link to="/about" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
+              About
             </Link>
             <Link to="/maxliftcalc" className="block text-white px-4 py-2" onClick={closeMobileMenu}>
               Contact
