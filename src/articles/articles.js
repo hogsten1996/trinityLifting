@@ -1,5 +1,331 @@
 const articles = [
   {
+    id: 10,
+    title: "Training Hard and Lifting Heavy",
+    author: "Jacob Hogsten",
+    sections: [
+      {
+        type: "section",
+        content: "Introduction:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In the realm of fitness, there's a unique satisfaction that comes from training hard and lifting heavy weights. This guide delves into the journey of embracing the iron, exploring the physical and mental dimensions of pushing oneself to the limit in the gym. Whether you're a seasoned lifter or just starting, the pursuit of lifting heavy unveils a transformative path that goes beyond the plates on the barbell.
+        `
+      },
+      {
+        type: "section",
+        content: "The Call of the Iron:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Training hard and lifting heavy weights is more than a physical pursuit; it's a calling. The clang of iron plates, the strain of muscles, and the relentless pursuit of personal records form a symphony that resonates with those who embrace the challenge. This call beckons individuals to step into the gym, face the barbell, and discover the strength that lies within.
+        `
+      },
+      {
+        type: "section",
+        content: "The Physical Transformation:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Lifting heavy weights triggers a cascade of physical transformations. The muscles respond to the demand for increased force production by growing in size and strength. The skeletal system adapts, becoming more resilient to the stresses imposed by heavy loads. The cardiovascular system, pushed to its limits, enhances endurance and efficiency. Each lift, each set, contributes to a metamorphosis that goes beyond aesthetics, fostering a robust and capable physique.
+        `
+      },
+      {
+        type: "section",
+        content: "The Mental Fortitude Required:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Training hard and lifting heavy is not just a test of physical prowess; it demands mental fortitude. The moments before a heavy lift, the internal dialogue urging perseverance, and the ability to push through discomfort all contribute to the development of a resilient mindset. The gym becomes a laboratory for cultivating discipline, focus, and the mental strength needed to confront challenges both inside and outside the weight room.
+        `
+      },
+      {
+        type: "section",
+        content: "The Pursuit of Personal Records:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Central to the journey of lifting heavy is the pursuit of personal records (PRs). Whether it's adding an extra plate to the squat rack, increasing the weight on the bench press, or pulling a new deadlift max, PRs represent tangible milestones of progress. The satisfaction derived from surpassing one's previous limits fuels the relentless pursuit of improvement, creating a perpetual cycle of growth and achievement.
+        `
+      },
+      {
+        type: "section",
+        content: "Balancing Intensity with Smart Programming:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          While the allure of lifting heavy is undeniable, it's crucial to balance intensity with smart programming. Progressive overload, periodization, and adequate recovery are essential components of a sustainable training regimen. Understanding the importance of proper form and technique not only prevents injuries but also optimizes the efficiency of each lift. The art of balancing intensity with intelligence ensures long-term progress without compromising health.
+        `
+      },
+      {
+        type: "section",
+        content: "The Transformative Power of Consistency:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Consistency is the bedrock upon which the journey of training hard and lifting heavy is built. The incremental gains achieved through regular, dedicated effort accumulate over time, leading to profound transformations. It's not just about sporadic bursts of intensity but the sustained commitment to the iron, day in and day out, that forges enduring strength and resilience.
+        `
+      },
+      {
+        type: "section",
+        content: "The Brotherhood of the Iron Warriors:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In the realm of heavy lifting, a unique camaraderie emerges among those who heed the call of the iron. The gym transforms into a sacred space where individuals support, motivate, and inspire one another. The shared understanding of the challenges and triumphs creates a brotherhood of iron warriors, united by the pursuit of strength and the relentless dedication to self-improvement.
+        `
+      },
+      {
+        type: "section",
+        content: "Conclusion:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In conclusion, the journey of training hard and lifting heavy is a transformative odyssey that extends beyond the physical realm. It's a call to embrace the iron, to discover the depths of physical and mental strength, and to continuously pursue personal records. Balancing intensity with intelligent programming, maintaining consistency, and relishing the camaraderie of fellow iron warriors form the pillars of this empowering journey. So, step into the gym, face the barbell, and let the transformative power of lifting heavy unfold as you become a testament to the resilience and strength that lie within.
+        `
+      }
+    ],
+    imageUrl: "https://www.muscleandfitness.com/wp-content/uploads/2019/11/Tired-Topless-Man-Kneeling-Down-On-Floor-Barbell.jpg?quality=86&strip=all",
+    tags: ["training", "lifting heavy", "strength", "mental fortitude", "consistency"]
+  },  
+  {
+    id: 9,
+    title: "Embrace and Enjoy the Process",
+    author: "Jacob Hogsten",
+    sections: [
+      {
+        type: "section",
+        content: "Introduction:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In the vibrant world of powerlifting, where strength is a constant pursuit, it's time to shift our focus. This guide invites powerlifters to revel in their personal journeys, finding joy not just in the end goals but in every step of the process. Let's explore the importance of embracing your powerlifting progress and savoring the happiness woven into the fabric of your strength-building journey.
+        `
+      },
+      {
+        type: "section",
+        content: "The Personal Joy in Powerlifting Progress:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Powerlifting is a deeply personal endeavor, and the joy it brings goes beyond hitting specific weight targets. Instead of fixating on external benchmarks, cherish the personal victories—small improvements in your squat, refining your deadlift form, or the consistency in your bench press. These moments define your unique progress and contribute to the genuine happiness found in your powerlifting journey.
+        `
+      },
+      {
+        type: "section",
+        content: "The Process Over the Destination:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          While achieving specific goals is commendable, the true joy in powerlifting lies in the day-to-day grind—the dedication to perfecting your technique, the camaraderie with fellow lifters, and the sense of accomplishment after a challenging session. Embrace the process over the destination, recognizing that each training day contributes to your growth as a powerlifter. Revel in the challenges, celebrate the victories, and find fulfillment in the ongoing journey.
+        `
+      },
+      {
+        type: "section",
+        content: "Appreciating the Powerlifting Community:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Powerlifting is more than a solitary pursuit; it's a community that thrives on support, encouragement, and shared passion. The joy in powerlifting is amplified when you appreciate the camaraderie of your fellow lifters. Celebrate their successes, draw inspiration from their journeys, and find happiness in being part of a community that understands the unique challenges and triumphs of the powerlifting lifestyle.
+        `
+      },
+      {
+        type: "section",
+        content: "Mindful Presence in Every Lift:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          To fully enjoy your powerlifting journey, practice mindful presence in every lift. Instead of solely focusing on the weight on the bar, pay attention to the sensations in your body, relish the mind-muscle connection, and savor the satisfaction of executing a well-performed lift. By being present in the moment, you cultivate a deeper appreciation for the artistry and athleticism embedded in powerlifting.
+        `
+      },
+      {
+        type: "section",
+        content: "Conclusion:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In conclusion, find joy in your powerlifting journey. While achieving specific milestones is exciting, the true happiness lies in the everyday progress, the sense of community, and the mindful presence in each lift. Embrace your unique powerlifting story, appreciate the ongoing process, and relish in the joy that comes with being a part of this empowering community. Your strength is not just measured by the weights you lift but by the fulfillment and happiness derived from every step of the powerlifting journey.
+        `
+      }
+    ],
+    imageUrl: "https://knowltonthomas.files.wordpress.com/2018/07/bb1-e1533075857245.jpg?w=2000",
+    tags: ["powerlifting", "progress", "joy", "community", "mindfulness"]
+  },
+  {
+    id: 8,
+    title: "The Backbone of Powerlifting",
+    author: "Jacob Hogsten",
+    sections: [
+      {
+        type: "section",
+        content: "Introduction:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In the realm of powerlifting, where the pursuit of immense strength takes center stage, the significance of a robust back cannot be overstated. This comprehensive guide aims to unravel the pivotal role a strong back plays in powerlifting, exploring its impact on performance, injury prevention, and overall athletic achievement.
+        `
+      },
+      {
+        type: "section",
+        content: "The Backbone of Powerlifting:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Just as a building relies on a sturdy foundation, a powerlifter's strength is built upon the foundation of a strong back. The back muscles, including the latissimus dorsi, erector spinae, and traps, form the powerhouse that supports and propels the lifter through the demanding movements of squats, deadlifts, and bench presses. Neglecting the development of this crucial muscle group is akin to undermining the very essence of powerlifting.
+        `
+      },
+      {
+        type: "section",
+        content: "Enhanced Performance Through Back Strength:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          A strong back directly translates to enhanced performance in powerlifting exercises. The lats, for instance, play a pivotal role in stabilizing the spine during squats and deadlifts, allowing for a more upright posture and efficient force transfer. Well-developed erector spinae muscles contribute to spinal stability, reducing the risk of injuries and providing a solid base for heavy lifts. The traps, crucial in bench presses, assist in shoulder retraction and overall upper body control.
+        `
+      },
+      {
+        type: "section",
+        content: "Injury Prevention and Longevity:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Powerlifting, by its nature, places immense stress on the musculoskeletal system. A strong back acts as a natural armor, fortifying the spine and surrounding muscles against the strains of heavy lifting. Adequate back strength minimizes the risk of injuries, such as herniated discs and muscle strains, ensuring longevity in the sport. A resilient back not only boosts immediate performance but also safeguards the lifter's powerlifting journey in the long run.
+        `
+      },
+      {
+        type: "section",
+        content: "Targeted Back Training Strategies:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          To harness the full potential of a strong back, powerlifters should incorporate targeted training strategies. Compound movements like barbell rows, pull-ups, and deadlift variations are essential for overall back development. Isolation exercises focusing on specific areas, such as lat pulldowns and face pulls, add precision to the training regimen. Consistency and progressive overload in these exercises are key to unlocking the full strength-building capacity of the back muscles.
+        `
+      },
+      {
+        type: "section",
+        content: "The Mental Aspect: Confidence and Focus:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Beyond the physical benefits, a strong back contributes to the mental fortitude required in powerlifting. Knowing that your back is a resilient force instills confidence, allowing lifters to approach the bar with unwavering focus. The mental aspect is a formidable ally, especially when attempting maximal lifts where self-assurance and concentration can be the deciding factors between success and failure.
+        `
+      },
+      {
+        type: "section",
+        content: "Conclusion:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In conclusion, a strong back stands as the backbone of powerlifting, influencing performance, preventing injuries, and shaping the mental fortitude of the lifter. Understanding and prioritizing back development in training is not just a choice; it is a necessity for those seeking excellence in the world of powerlifting. As the saying goes, a chain is only as strong as its weakest link—make sure your back is the unyielding link that propels you to unparalleled strength and achievement.
+        `
+      }
+    ],
+    imageUrl: "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2011/07/leadImage-2.jpg",
+    tags: ["powerlifting", "strength training", "back muscles", "injury prevention", "performance enhancement"]
+  },  
+  {
+    id: 8,
+    title: "The Power of Paused Deadlifts",
+    author: "Jacob Hogsten",
+    sections: [
+      {
+        type: "section",
+        content: "Introduction:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Powerlifting, the pursuit of maximum strength, requires a strategic approach to training. Sticking points and plateaus are inevitable challenges on this journey. In this guide, we delve into the benefits of incorporating paused deadlifts into your routine—a powerful technique to overcome stagnation and propel your powerlifting performance to new heights.
+        `
+      },
+      {
+        type: "section",
+        content: "Understanding Sticking Points in Powerlifting:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Sticking points are phases in a lift where the lifter encounters increased resistance, hindering smooth progression. These plateaus can be frustrating and demotivating, but they are also opportunities for growth and refinement. Addressing these challenges head-on is crucial for continual improvement in the world of powerlifting.
+        `
+      },
+      {
+        type: "section",
+        content: "The Paused Deadlift Technique:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Paused deadlifts involve a deliberate pause during the lift, typically just above the ground or at the knee. This technique eliminates the stretch reflex, requiring the lifter to exert more force to initiate the upward movement. By focusing on the sticking points and strengthening specific portions of the lift, paused deadlifts become a valuable tool in breaking through plateaus.
+        `
+      },
+      {
+        type: "section",
+        content: "Targeting Weak Points and Building Strength:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Sticking points often highlight weaknesses in specific muscle groups or movement patterns. Paused deadlifts force you to confront and address these weaknesses head-on. The increased time under tension during the pause places greater demands on your muscles, promoting hypertrophy and enhancing overall strength in the critical phases of the lift.
+        `
+      },
+      {
+        type: "section",
+        content: "Programming Paused Deadlifts:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          Integrate paused deadlifts strategically into your powerlifting program. Consider incorporating them as a variation in your training routine, focusing on specific phases where you experience sticking points. Gradually increase the load as your strength improves, ensuring progressive overload to drive continuous adaptation.
+        `
+      },
+      {
+        type: "section",
+        content: "Benefits Beyond Breaking Plateaus:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          While paused deadlifts excel at overcoming sticking points, their benefits extend beyond mere plateau-busting. Improved posture, enhanced core stability, and refined lifting mechanics are additional advantages. The heightened focus required during the pause also contributes to better mind-muscle connection, a crucial element in powerlifting success.
+        `
+      },
+      {
+        type: "section",
+        content: "Conclusion:"
+      },
+      {
+        type: "paragraph",
+        content: `
+          In conclusion, paused deadlifts offer a targeted and effective strategy for powerlifters looking to break through sticking points and push past plateaus. By embracing this technique, you not only strengthen specific phases of the lift but also lay the groundwork for overall improvement in your powerlifting performance. Remember, challenges are opportunities in disguise—use paused deadlifts to your advantage and witness your strength soar to unprecedented levels.
+        `
+      }
+    ],
+    imageUrl: "https://i.ytimg.com/vi/i19ajdPxATg/maxresdefault.jpg",
+    tags: ["powerlifting", "deadlifts", "strength training", "progressive overload", "plateau-breaking"]
+  },
+  {
     id: 7,
     title: "Building Mass for Maximum Strength",
     author: "Jacob Hogsten",
