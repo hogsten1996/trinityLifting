@@ -247,7 +247,7 @@ const articles = [
     tags: ["powerlifting", "strength training", "back muscles", "injury prevention", "performance enhancement"]
   },  
   {
-    id: 8,
+    id: 7,
     title: "The Power of Paused Deadlifts",
     author: "Jacob Hogsten",
     sections: [
@@ -326,7 +326,7 @@ const articles = [
     tags: ["powerlifting", "deadlifts", "strength training", "progressive overload", "plateau-breaking"]
   },
   {
-    id: 7,
+    id: 6,
     title: "Building Mass for Maximum Strength",
     author: "Jacob Hogsten",
     sections: [
@@ -425,7 +425,7 @@ const articles = [
     tags: ["strength training", "muscle building", "progressive overload", "nutrition", "rest and recovery"]
   },
   {
-    id: 6,
+    id: 5,
     title: "Power of the Close Grip Bench Press",
     author: "Jacob Hogsten",
     sections: [
@@ -520,7 +520,7 @@ const articles = [
     tags: ["bench press", "strength training", "triceps", "fitness"],
   },
   {
-    id: 5,
+    id: 4,
     title: "Front Squats for Powerlifting",
     author: "Jacob Hogsten",
     sections: [
@@ -615,7 +615,7 @@ const articles = [
     tags: ["powerlifting", "strength training", "front squat", "fitness"],
   },
   {
-    id: 4,
+    id: 3,
     title: "The Best Squat Accessory For Strength",
     author: "Jacob Hogsten",
     sections: [
